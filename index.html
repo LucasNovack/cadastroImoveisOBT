@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Cadastros de Imóveis</title>
+    <script src="class1.js"></script>
+    <script src="app.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Cadastro de imóveis</h1>
+        <hr>
+    </header>
+    <main>
+        <h3>Informações para cadastro</h3>
+        <form id="form1">
+            <p>
+                <label for="type">Tipo:</label>
+                <select name="type">
+                    <option value="Casa">Casa</option>
+                    <option value="Apartamento">Apartamento</option>
+                </select>
+            </p>
+            <p>
+                <label>Área(m²):</label>
+                <input type="number" name="area" id="area">
+            </p>
+            <p>
+                <label for="opcao">Alugado:</label>
+                <select name="opcao">
+                    <option value="Não">Não</option>
+                    <option value="Sim">Sim</option>
+                </select>
+            </p>
+            <button type="submit" onclick="app()">Adicionar</button>
+            <br>
+            <hr>
+        </form>
+        <div id="listaImov">
+
+        </div>
+    </main>
+</body>
+</html>
